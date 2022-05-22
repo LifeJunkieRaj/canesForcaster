@@ -1,0 +1,41 @@
+header, footer {
+    background-color:#47A8BD ;
+    color: maroon;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    background-color: #546A7B;
+}
+
+.list {
+    /* margin: auto;
+    width: 60%;
+    border: 5px solid #FFFF00;
+    padding: 10px; */
+}
+
+aside {
+    padding-top: 10px;
+    font-weight: bold;
+    text-align: center;
+    list-style-position: inside;
+    margin: auto;
+    width: 60%;
+    border: 5px solid black;
+    background-color: maroon;
+    padding: 10px;
+}
+
+.title {
+    color:#47A8BD;
+}
+
+#menuItems {
+    color: antiquewhite;
+}
+
+li {
+    text-align: left;
+}
