@@ -7,53 +7,93 @@
         <link href="app.css" rel="stylesheet"/>
     </head>
     <body>
-        <header>
+        <header class="container-fluid">
             <h1>CANE'S FORCASTER</h1>
         </header>
 
-        <aside>
-            <h2 class="title">WIND CHILL FACTOR | COLD FRONT</h2>
-            <div>
-                <ul id="menuItems">
-                    <li>Frappes</li>
-                    
-                    <li>Smoothies</li>
-                    
-                    <li>Local Creations</li>
-                </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
             </div>
-        </aside>
-
-        <aside>
-            <h2 class="title">HEAT WAVE (WIND CHILL upon request)</h2>
-            <div>
-                <ul id="menuItems">
-                    <li>Coffee</li>
-                
-                    <li>Not Coffee</li>
-                </ul>
-            </div>
-        </aside>
+          </nav>
         
-        <aside>
-            <h2 class="title">TASTY COMESTIBLES</h2>
-            <div>
-                <ul id="menuItems">
-                    <li>Aussie Pies</li>
-                
-                    <li>Pressed Paninis</li>
-                    
-                    <li>Spring Into Health</li>
-                    
-                    <li>Bagels</li>
-                    
-                    <li>Waffles</li> 
-                    
-                    <li>Superfood Overnight Oatmeal</li> 
-                </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <aside class="col-sm-4">
+                    <h2 class="title">WIND CHILL FACTOR | COLD FRONT</h2>
+                    <div>
+                        <ul id="menuItemsButtons">
+                            <li><a href="#">FRAPPES</a></li>
+                            
+                            <li><a href="#">SMOOTHIES</a></li>
+                            
+                            <li><a href="#">LOCAL CREATIONS</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <aside class="col-sm-4">
+                    <h2 class="title">HEAT WAVE (WIND CHILL upon request)</h2>
+                    <div>
+                        <ul id="menuItemsButtons">
+                            <li><a href="#">COFFEE</a></li>
+                        
+                            <li><a href="#">NOT COFFEE</a></li>
+                        </ul>
+                    </div>
+                </aside>
+                        
+                <aside class="col-sm-4">
+                    <h2 class="title">TASTY COMESTIBLES</h2>
+                    <div>
+                        <ul id="menuItemsButtons">
+                            <li><a href="#">AUSSIE PIES</a></li>
+                        
+                            <li><a href="#">PRESSED PANINIS</a></li>
+                            
+                            <li><a href="#">SPRING INTO HEALTH</a></li>
+                            
+                            <li><a href="#">BAGELS</a></li>
+                            
+                            <li><a href="#">WAFFLES</a></li> 
+                            
+                            <li><a href="#">SUPERFOOD OVERNIGHT OATMEAL</a></li> 
+                        </ul>
+                    </div>
+                </aside>
             </div>
-        </aside>
-        <footer>
+        </div>
+        <footer class="container-fluid">
             Property of Parisi's (Copyright 2022)
         </footer>
     </body>
