@@ -6,7 +6,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <link href="app.css" rel="stylesheet"/>
     </head>
-    <body>
+    <body onload="onLoad();">
         <header class="container-fluid">
             <h1>CANE'S FORCASTER</h1>
         </header>
@@ -52,31 +52,42 @@
                 <aside class="col-sm-4">
                     <h2 class="title">WIND CHILL FACTOR | COLD FRONT</h2>
                     <div>
-                        <ul id="menuItemsButtons">
+                        <!-- <ul id="menuItemsButtons">
                             <li><a href="#">FRAPPES</a></li>
                             
                             <li><a href="#">SMOOTHIES</a></li>
                             
                             <li><a href="#">LOCAL CREATIONS</a></li>
-                        </ul>
+                        </ul> -->
+                        <div class="list-group">
+                          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                            FRAPPES
+                          </button>
+                          <button type="button" class="list-group-item list-group-item-action">SMOOTHIES</button>
+                          <button type="button" class="list-group-item list-group-item-action">LOCAL CREATIONS</button>
+                        </div>
                     </div>
                 </aside>
 
                 <aside class="col-sm-4">
                     <h2 class="title">HEAT WAVE (WIND CHILL upon request)</h2>
                     <div>
-                        <ul id="menuItemsButtons">
+                        <!-- <ul id="menuItemsButtons">
                             <li><a href="#">COFFEE</a></li>
                         
                             <li><a href="#">NOT COFFEE</a></li>
-                        </ul>
+                        </ul> -->
+                        <div class="list-group">
+                          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">COFFEE</button>
+                          <button type="button" class="list-group-item list-group-item-action">NOT COFFEE</button>
+                        </div>
                     </div>
                 </aside>
                         
                 <aside class="col-sm-4">
                     <h2 class="title">TASTY COMESTIBLES</h2>
                     <div>
-                        <ul id="menuItemsButtons">
+                        <!-- <ul id="menuItemsButtons">
                             <li><a href="#">AUSSIE PIES</a></li>
                         
                             <li><a href="#">PRESSED PANINIS</a></li>
@@ -88,13 +99,24 @@
                             <li><a href="#">WAFFLES</a></li> 
                             
                             <li><a href="#">SUPERFOOD OVERNIGHT OATMEAL</a></li> 
-                        </ul>
+                        </ul> -->
+                        <div class="list-group">
+                          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
+                            AUSSIE PIES
+                          </button>
+                          <button type="button" class="list-group-item list-group-item-action">PRESSED PANINIS</button>
+                          <button type="button" class="list-group-item list-group-item-action">SPRING INTO HEALTH</button>
+                          <button type="button" class="list-group-item list-group-item-action">BAGELS</button>
+                          <button type="button" class="list-group-item list-group-item-action" disabled>WAFFLES</button>
+                          <button type="button" class="list-group-item list-group-item-action" disabled>SUPERFOOD</button>
+                        </div>
                     </div>
                 </aside>
             </div>
         </div>
         <footer class="container-fluid">
             Property of Parisi's (Copyright 2022)
+            <p id="timestamp"></p>
         </footer>
     </body>
 </html>
